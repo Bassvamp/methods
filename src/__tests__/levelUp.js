@@ -15,6 +15,7 @@ test("test level up Character", () => {
 });
 
 test("test level up with 0 health", () => {
-  let person = new Bowman("Alex", "Bowman", 0);
+  let person = new Bowman("Alex", "Bowman");
+  person.health = 0;
   expect(() => person.levelUp()).toThrow();
 });

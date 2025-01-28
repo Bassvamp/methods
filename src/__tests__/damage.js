@@ -16,6 +16,7 @@ test("test damage Character", () => {
 });
 
 test("test damage with 0 health", () => {
-  let person = new Bowman("Alex", "Bowman", 0);
+  let person = new Bowman("Alex", "Bowman");
+  person.health = 0;
   expect(() => person.damage(10)).toThrow();
 });

@@ -1,11 +1,10 @@
 import Character from "./Character.js"
 
 export default class Bowman extends Character {
-    constructor(name, type = 'Bowman', health, level, attack = 25, defense = 25) {
-        super(name, type, health, level, attack, defense)
-    }
+    constructor(name, type = 'Bowman') {
+        super(name, type)
 
-    levelUp() {
-        super.levelUp()
+        this.attack = 25;
+        this.defense = 25;
     }
 }
